@@ -127,6 +127,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bm-oT-kql">
                                         <rect key="frame" x="0.0" y="352" width="375" height="30"/>
                                         <state key="normal" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="rangesAnswerButtonPressed:" destination="Uqa-jE-tMt" eventType="touchUpInside" id="h0j-JV-Bag"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -136,18 +139,30 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TeX-Py-RaT">
                                         <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="Uqa-jE-tMt" eventType="touchUpInside" id="PvT-yu-umT"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEY-QM-BMh">
                                         <rect key="frame" x="0.0" y="90" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="Uqa-jE-tMt" eventType="touchUpInside" id="Yqb-sr-WOK"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1uA-mT-4Ei">
                                         <rect key="frame" x="0.0" y="180" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="Uqa-jE-tMt" eventType="touchUpInside" id="Mvf-jR-91q"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpd-0v-gwG">
                                         <rect key="frame" x="0.0" y="270" width="46" height="29"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="Uqa-jE-tMt" eventType="touchUpInside" id="YSS-Ki-QVE"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -213,6 +228,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vaw-lR-azf">
                                         <rect key="frame" x="0.0" y="253" width="375" height="60"/>
                                         <state key="normal" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="multipleAnswerButtonPressed" destination="Uqa-jE-tMt" eventType="touchUpInside" id="QSE-RN-ysP"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -262,10 +280,16 @@
                         <outlet property="multiLabel2" destination="8QD-Is-swc" id="9dc-Dh-nOL"/>
                         <outlet property="multiLabel3" destination="vbN-sq-5NO" id="Kxb-bB-8Nn"/>
                         <outlet property="multiLabel4" destination="zhm-Zn-qvg" id="eDK-4u-MFS"/>
+                        <outlet property="multiSwitch1" destination="zpL-kT-7bD" id="hOp-xz-IJh"/>
+                        <outlet property="multiSwitch2" destination="mzk-Kj-5U2" id="qsd-1v-9lj"/>
+                        <outlet property="multiSwitch3" destination="a9h-Cf-ZOw" id="8wC-be-YfU"/>
+                        <outlet property="multiSwitch4" destination="f8V-lh-gC5" id="j9R-pA-av4"/>
                         <outlet property="multipleStackView" destination="HF6-v6-2qs" id="kcC-er-WxN"/>
+                        <outlet property="questionLabel" destination="tOv-F4-EH7" id="R54-4Q-CGc"/>
                         <outlet property="questionProgressView" destination="mRx-fo-T2f" id="uhg-Te-ugg"/>
                         <outlet property="rangedLabel1" destination="fXh-5T-0wJ" id="5D2-7b-bgK"/>
                         <outlet property="rangedLabel2" destination="jNu-cb-BGK" id="1Km-Z4-kYJ"/>
+                        <outlet property="rangedSlider" destination="msR-ge-e54" id="1Jo-WW-dYP"/>
                         <outlet property="rangesStackView" destination="fMI-uN-eRP" id="pxe-mA-eBn"/>
                         <outlet property="singleButton1" destination="TeX-Py-RaT" id="Hdg-UR-twt"/>
                         <outlet property="singleButton2" destination="CEY-QM-BMh" id="VJ2-QU-6vU"/>
